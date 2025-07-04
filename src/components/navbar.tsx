@@ -3,7 +3,7 @@ import Sidebar from "./sidebar";
 
 export default function Navbar() {
   return (
-    <div className="w-full flex items-center justify-between h-[80px] md:h-[100px] px-[24px] md:px-[50px] relative">
+    <div className="w-full flex items-center justify-between h-[80px] md:h-[100px] px-[24px] md:px-[50px] lg:px-[180px] relative">
       <div className="block md:hidden">
         <Sidebar />
       </div>
@@ -23,7 +23,7 @@ export default function Navbar() {
 
       <ModeToggle />
 
-      <div className="hidden md:inline-block md:absolute left-0 right-0 bottom-0  flex-1 h-[2px] bg-dark-200 md:mx-[50px] lg:[mx-180px]"></div>
+      <div className="hidden md:inline-block md:absolute left-0 right-0 bottom-0  flex-1 h-[2px] bg-dark-200 md:mx-[50px] lg:mx-[180px]"></div>
     </div>
   );
 }

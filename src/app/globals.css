@@ -43,6 +43,7 @@
   --color-blue: #00d2df;
   --color-gray-light: #c4c4c4;
   --color-dark-200: #151515;
+  --border-gradient-purple-blue: linear-gradient(to right, #9358f7, #10d7e2);
 }
 
 :root {
