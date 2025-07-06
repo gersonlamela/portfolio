@@ -1,6 +1,7 @@
 import AboutMe from "@/components/about-me";
 import Experience from "@/components/experience";
 import HelloIm from "@/components/hello-im";
+import Projects from "@/components/projects";
 import Image from "next/image";
 
 export default function Home() {
@@ -28,6 +29,16 @@ export default function Home() {
       >
         <Experience />
       </section>
+      <section
+        id="projects"
+        className="flex w-full bg-dark-200 items-center justify-center h-auto  mt-[40px] md:mt-0 px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
+      >
+        <Projects />
+      </section>
+      <footer className="w-full flex items-center justify-center py-[15px] px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]">
+        <div> @ {new Date().getFullYear()} - Gerson Lamela</div>
+        <div></div>
+      </footer>
     </div>
   );
 }

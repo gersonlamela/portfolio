@@ -13,19 +13,25 @@ export default function HelloIm() {
       </h3>
 
       <div className="flex flex-row items-center gap-[24px] mt-[40px] md:mt-[60px]">
-        <div className="flex rounded-[4px]  bg-gradient-to-r from-[#9358F7] to-[#10D7E2] p-[2px] shadow-lg w-max mt-4">
+        <a
+          href="https://www.linkedin.com/in/gersonlamela/"
+          className="flex rounded-[4px]  bg-gradient-to-r from-[#9358F7] to-[#10D7E2] p-[2px] shadow-lg w-max mt-4"
+        >
           <Button className="flex items-center gap-[14px] font-bold text-white bg-background w-[144px] md:w-[155px] h-[40px] md:h-[45px] px-6 py-2 rounded-[4px] hover:bg-background cursor:pointer">
             <Image src="linkedin.svg" alt="linkedin" width={20} height={20} />
             Linkedin
           </Button>
-        </div>
+        </a>
 
-        <div className="flex rounded-[4px]  bg-gradient-to-r from-[#D24074] to-[#6518B4]  p-[2px] shadow-lg w-max mt-4">
+        <a
+          href="https://github.com/gersonlamela"
+          className="flex rounded-[4px]  bg-gradient-to-r from-[#D24074] to-[#6518B4]  p-[2px] shadow-lg w-max mt-4"
+        >
           <Button className="flex items-center gap-[14px] font-bold text-white bg-background w-[144px] md:w-[155px] h-[40px] md:h-[45px] px-6 py-2 rounded-[4px] hover:bg-background cursor-pointer">
             <Image src="github.svg" alt="github" width={20} height={20} />
             Github
           </Button>
-        </div>
+        </a>
       </div>
     </div>
   );
