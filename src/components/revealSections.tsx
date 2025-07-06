@@ -15,11 +15,13 @@ const ScrollRevealSection = ({
   const uniqueClass = useId().replace(/:/g, "-");
 
   useEffect(() => {
-    ScrollReveal().reveal(`.${uniqueClass}`, {
-      duration: 1000,
-      distance: "100%",
-      origin,
-    });
+    if (typeof window !== "undefined") {
+      ScrollReveal().reveal(`.${uniqueClass}`, {
+        duration: 1000,
+        distance: "100%",
+        origin,
+      });
+    }
   }, [origin, uniqueClass]);
 
   return <div className={uniqueClass}>{children}</div>;
