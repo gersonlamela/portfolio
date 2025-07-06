@@ -1,7 +1,6 @@
 "use client";
 
 import { type ReactNode, useEffect, useId } from "react";
-import ScrollReveal from "scrollreveal";
 
 interface ScrollRevealSectionProps {
   children: ReactNode;
@@ -16,10 +15,12 @@ const ScrollRevealSection = ({
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      ScrollReveal().reveal(`.${uniqueClass}`, {
-        duration: 1000,
-        distance: "100%",
-        origin,
+      import("scrollreveal").then((ScrollReveal) => {
+        ScrollReveal.default().reveal(`.${uniqueClass}`, {
+          duration: 1000,
+          distance: "100%",
+          origin,
+        });
       });
     }
   }, [origin, uniqueClass]);
