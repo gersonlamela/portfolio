@@ -47,7 +47,6 @@ html {
   --color-blue: #00d2df;
   --color-gray-light: #c4c4c4;
   --color-dark-200: #151515;
-  --border-gradient-purple-blue: linear-gradient(to right, #9358f7, #10d7e2);
 }
 
 :root {
@@ -117,6 +116,9 @@ html {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --color-blue: #007a87; /* Azul mais escuro para melhor legibilidade no fundo claro */
+  --color-gray-light: #f0f0f0; /* Cinza bem claro */
+  --color-dark-200: #ffffff; /* Fundo claro (branco) */
 }
 
 @layer base {

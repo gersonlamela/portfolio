@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
 
 export default function AboutMe() {
   return (
@@ -16,9 +15,7 @@ export default function AboutMe() {
       </div>
 
       <div className="flex flex-col w-full md:w-auto md:max-w-[700px] mt-[32px] md:mt-0">
-        <h1 className="text-2xl font-semibold text-white uppercase">
-          About Me
-        </h1>
+        <h1 className="text-2xl font-semibold  uppercase">About Me</h1>
         <h2 className="text-base font-medium mt-[16px]">Porto, Portugal</h2>
         <p className="font-light text-sm mt-[8px] text-justify  leading-6 md:leading-8">
           Hi, I’m <b>Gerson Lamela</b> — a passionate Fullstack JavaScript
@@ -36,10 +33,10 @@ export default function AboutMe() {
           great together.
         </p>
         <div className="flex flex-row items-center gap-[24px] mt-[32px] md:mt-[30px] ">
-          <div className="flex rounded-[4px]  bg-gradient-to-r from-[#D24074] to-[#6518B4]  p-[2px] shadow-lg w-max mt-4">
+          <div className="flex rounded-[4px]  bg-gradient-to-r from-[#D24074] to-[#6518B4] hover:scale-120 transition-all p-[2px] shadow-lg w-max mt-4">
             <a
               href="curriculum.pdf"
-              className="flex items-center justify-center gap-[14px] font-bold text-white bg-background w-[144px] md:w-[155px] h-[40px] md:h-[45px] rounded-[4px] hover:bg-background cursor-pointer"
+              className="flex items-center justify-center gap-[14px] font-bold  bg-background w-[144px] md:w-[155px] h-[40px] md:h-[45px] rounded-[4px] hover:bg-background cursor-pointer"
               target="_blank"
               rel="noopener"
             >
@@ -48,18 +45,25 @@ export default function AboutMe() {
                 alt="Curriculum"
                 width={20}
                 height={20}
+                className="invert dark:invert-0"
               />
               Curriculum
             </a>
           </div>
-          <div className="flex rounded-[4px]  bg-gradient-to-r from-[#9358F7] to-[#10D7E2]  p-[2px] shadow-lg w-max mt-4">
+          <div className="flex rounded-[4px]  bg-gradient-to-r from-[#9358F7] to-[#10D7E2] hover:scale-120 transition-all  p-[2px] shadow-lg w-max mt-4">
             <a
               href="mailto:gersonlamela7@gmail.com"
-              className="flex items-center justify-center gap-[14px] font-bold text-white bg-background w-[144px] md:w-[155px] h-[40px] md:h-[45px] rounded-[4px] hover:bg-background cursor-pointer"
+              className="flex items-center justify-center gap-[14px] font-bold  bg-background w-[144px] md:w-[155px] h-[40px] md:h-[45px] rounded-[4px] hover:bg-background cursor-pointer"
               target="_blank"
               rel="noopener"
             >
-              <Image src="mail.svg" alt="E-mail" width={20} height={20} />
+              <Image
+                src="mail.svg"
+                alt="E-mail"
+                width={20}
+                height={20}
+                className="invert dark:invert-0"
+              />
               E-mail
             </a>
           </div>

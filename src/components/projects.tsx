@@ -74,20 +74,26 @@ export default function Projects() {
               )}
 
               <div className="flex gap-4 mt-4 flex-wrap">
-                <div className="rounded-[4px] bg-gradient-to-r from-[#9358F7] to-[#10D7E2] p-[2px] shadow-lg">
+                <div className="rounded-[4px] bg-gradient-to-r from-[#9358F7] to-[#10D7E2] hover:scale-120 transition-all p-[2px] shadow-lg">
                   <Button
-                    className="flex items-center gap-[14px] font-bold text-white bg-background px-6 py-2 rounded-[4px]"
+                    className="flex items-center gap-[14px] font-bold text-black dark:text-white bg-background px-6 py-2 rounded-[4px]"
                     onClick={() => window.open(project.repoLink, "_blank")}
                   >
-                    <Image src="/link.svg" alt="Repo" width={20} height={20} />
+                    <Image
+                      src="/github.svg"
+                      alt="Repo"
+                      width={20}
+                      height={20}
+                      className="invert dark:invert-0"
+                    />
                     GitHub
                   </Button>
                 </div>
 
                 {project.liveLink && (
-                  <div className="rounded-[4px] bg-gradient-to-r from-[#9358F7] to-[#10D7E2] p-[2px] shadow-lg">
+                  <div className="rounded-[4px] bg-gradient-to-r from-[#9358F7] to-[#10D7E2] hover:scale-120 transition-all p-[2px] shadow-lg">
                     <Button
-                      className="flex items-center gap-[14px] font-bold text-white bg-background px-6 py-2 rounded-[4px]"
+                      className="flex items-center gap-[14px] font-bold text-black dark:text-white bg-background px-6 py-2 rounded-[4px]"
                       onClick={() => window.open(project.liveLink, "_blank")}
                     >
                       <Image
@@ -95,6 +101,7 @@ export default function Projects() {
                         alt="Live"
                         width={20}
                         height={20}
+                        className="invert dark:invert-0"
                       />
                       Live
                     </Button>

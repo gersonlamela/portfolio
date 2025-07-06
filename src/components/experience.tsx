@@ -38,7 +38,7 @@ export default function Experience() {
                 value={experience.category}
                 className="group h-[60px] p-0 flex items-start justify-between rounded-none border-0 focus:border-0 bg-background"
               >
-                <div className="w-[144px] h-[40px] flex items-center justify-center group-data-[state=active]:bg-dark-200">
+                <div className="w-[144px] h-[40px] flex items-center justify-center font-medium dark:group-data-[state=active]:bg-dark-200">
                   {experience.category}
                 </div>
               </TabsTrigger>
@@ -54,7 +54,7 @@ export default function Experience() {
                 <h1 className="text-base md:text-2xl font-medium">
                   {experience.title}
                 </h1>
-                <span className="text-base font-medium text-white hidden md:block">
+                <span className="text-base font-medium hidden md:block">
                   {experience.dates}
                 </span>
               </div>
@@ -62,11 +62,11 @@ export default function Experience() {
                 <h2 className="text-sm text-blue font-medium">
                   {experience.organization}
                 </h2>
-                <span className="text-xs font-medium text-white md:hidden">
+                <span className="text-xs font-medium  md:hidden">
                   {experience.dates}
                 </span>
               </div>
-              <ul className="list-disc text-sm md:text-lg text-left font-light text-gray-light pl-5 space-y-2">
+              <ul className="list-disc text-sm md:text-lg text-left font-light text-black dark:text-gray-light pl-5 space-y-2">
                 {experience.description.map((description, index) => (
                   // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                   <li key={index}>{description}</li>

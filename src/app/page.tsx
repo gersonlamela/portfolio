@@ -25,7 +25,7 @@ export default function Home() {
       <ScrollRevealSection origin="left">
         <section
           id="aboutme"
-          className="flex w-full bg-dark-200 items-center justify-center h-auto md:h-screen mt-[55px] md:mt-0 py-[40px] px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
+          className="flex w-full items-center justify-center h-auto md:h-screen mt-[55px] md:mt-0 py-[40px] px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
         >
           <AboutMe />
         </section>
@@ -43,7 +43,7 @@ export default function Home() {
       <ScrollRevealSection origin="bottom">
         <section
           id="projects"
-          className="flex w-full bg-dark-200 items-center justify-center h-auto  mt-[40px] md:mt-0 px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
+          className="flex w-full  items-center justify-center h-auto  mt-[40px] md:mt-0 px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
         >
           <Projects />
         </section>

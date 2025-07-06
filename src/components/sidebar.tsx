@@ -22,28 +22,28 @@ export default function Sidebar() {
         <SheetHeader />
         <SheetTitle />
         <ul className="flex flex-col items-start text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-light w-full">
-          <li className=" cursor-pointer p-[15px] hover:bg-gray-light hover:text-black w-full">
+          <li className=" cursor-pointer p-[15px] text-black dark:text-white hover:font-bold dark:hover:font-normal dark:hover:text-white w-full">
             <SheetClose asChild>
               <a href="#home" className="block h-full w-full">
                 Home
               </a>
             </SheetClose>
           </li>
-          <li className=" cursor-pointer p-[15px] hover:bg-gray-light hover:text-black w-full">
+          <li className=" cursor-pointer p-[15px] text-black dark:text-white   hover:font-bold dark:hover:font-normal dark:hover:text-white w-full">
             <SheetClose asChild>
               <a href="#aboutme" className="block h-full w-full">
                 About me
               </a>
             </SheetClose>
           </li>
-          <li className=" cursor-pointer p-[15px] hover:bg-gray-light hover:text-black w-full">
+          <li className=" cursor-pointer p-[15px] text-black dark:text-white hover:font-bold dark:hover:font-normal dark:hover:text-white w-full">
             <SheetClose asChild>
               <a href="#experience" className="block h-full w-full">
                 Experience
               </a>
             </SheetClose>
           </li>
-          <li className=" cursor-pointer p-[15px] hover:bg-gray-light hover:text-black w-full">
+          <li className=" cursor-pointer p-[15px] text-black  dark:text-white hover:font-bold dark:hover:font-normal dark:hover:text-white w-full">
             <SheetClose asChild>
               <a href="#projects" className="block h-full w-full">
                 Projects

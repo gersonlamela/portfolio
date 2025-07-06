@@ -13,23 +13,23 @@ export default function Navbar() {
       </h1>
 
       <div className="hidden md:block">
-        <ul className="flex flex-row items-center md:gap-[30px] lg:gap-[60px] lg:text-lg text-gray-light">
-          <li className="hover:text-white cursor-pointer">
+        <ul className="flex flex-row items-center md:gap-[30px] lg:gap-[60px] lg:text-lg text-black dark:text-gray-light">
+          <li className="hover:font-bold dark:hover:font-normal dark:hover:text-white cursor-pointer">
             <a href="#home" className="block h-full w-full">
               Home
             </a>
           </li>
-          <li className="hover:text-white cursor-pointer">
+          <li className="hover:font-bold dark:hover:font-normal dark:hover:text-white cursor-pointer">
             <a href="#aboutme" className="block h-full w-full">
               About me
             </a>
           </li>
-          <li className="hover:text-white cursor-pointer">
+          <li className="hover:font-bold dark:hover:font-normal dark:hover:text-white cursor-pointer">
             <a href="#experience" className="block h-full w-full">
               Experience
             </a>
           </li>
-          <li className="hover:text-white cursor-pointer">
+          <li className="hover:font-bold dark:hover:font-normal dark:hover:text-white cursor-pointer">
             <a href="#projects" className="block h-full w-full">
               Projects
             </a>
