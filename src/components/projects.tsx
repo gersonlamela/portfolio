@@ -1,10 +1,10 @@
 "use client";
 
 import {
-  FileTsIcon,
-  FileJsIcon,
-  FileCssIcon,
   AtomIcon,
+  FileCssIcon,
+  FileJsIcon,
+  FileTsIcon,
 } from "@phosphor-icons/react";
 import { Button } from "./ui/button";
 import { type JSX, useEffect, useState } from "react";
@@ -38,7 +38,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="flex flex-col  gap-[24px] w-full py-[40px]">
+    <div className="flex flex-col gap-[24px] w-full py-[40px]">
       <h1 className="text-2xl font-semibold uppercase">Projects</h1>
       <div className="md:grid md:grid-cols-2 gap-[20px] space-y-[80px]">
         {projects.map((project) => (
@@ -48,7 +48,7 @@ export default function Projects() {
                 src={`/project/${project.image}`}
                 alt={project.title}
                 fill
-                className="object-cover min-h-[312px] w-full md:w-auto"
+                className="object-contain md:object-cover min-h-[312px] w-full md:w-auto"
               />
             </div>
 
