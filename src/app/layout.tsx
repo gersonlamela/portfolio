@@ -33,10 +33,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          <main className="mx-[24px] md:mx-[50px] lg:mx-[180px]">
-            {children}
-          </main>
+          <div className="flex flex-col">
+            <Navbar />
+            <main className="flex flex-1 items-center">{children}</main>
+          </div>
         </ThemeProvider>
       </body>
     </html>

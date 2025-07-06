@@ -5,6 +5,7 @@ import {
   SheetHeader,
   Sheet,
   SheetTitle,
+  SheetClose,
 } from "./ui/sheet";
 
 import { MenuIcon } from "lucide-react";
@@ -20,26 +21,34 @@ export default function Sidebar() {
       <SheetContent side="left">
         <SheetHeader />
         <SheetTitle />
-        <ul className="flex flex-col items-start lg:text-lg text-gray-light w-full">
+        <ul className="flex flex-col items-start text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-light w-full">
           <li className=" cursor-pointer p-[15px] hover:bg-gray-light hover:text-black w-full">
-            <a href="#home" className="block h-full w-full">
-              Home
-            </a>
+            <SheetClose asChild>
+              <a href="#home" className="block h-full w-full">
+                Home
+              </a>
+            </SheetClose>
           </li>
           <li className=" cursor-pointer p-[15px] hover:bg-gray-light hover:text-black w-full">
-            <a href="#aboutme" className="block h-full w-full">
-              About me
-            </a>
+            <SheetClose asChild>
+              <a href="#aboutme" className="block h-full w-full">
+                About me
+              </a>
+            </SheetClose>
           </li>
           <li className=" cursor-pointer p-[15px] hover:bg-gray-light hover:text-black w-full">
-            <a href="#experience" className="block h-full w-full">
-              Experience
-            </a>
+            <SheetClose asChild>
+              <a href="#experience" className="block h-full w-full">
+                Experience
+              </a>
+            </SheetClose>
           </li>
           <li className=" cursor-pointer p-[15px] hover:bg-gray-light hover:text-black w-full">
-            <a href="#projects" className="block h-full w-full">
-              Projects
-            </a>
+            <SheetClose asChild>
+              <a href="#projects" className="block h-full w-full">
+                Projects
+              </a>
+            </SheetClose>
           </li>
         </ul>
       </SheetContent>
