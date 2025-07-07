@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ProfileSummary from "./profile-summary";
 
 export default function AboutMe() {
   return (
@@ -17,21 +18,7 @@ export default function AboutMe() {
       <div className="flex flex-col w-full md:w-auto md:max-w-[700px] mt-[32px] md:mt-0">
         <h1 className="text-2xl font-semibold  uppercase">About Me</h1>
         <h2 className="text-base font-medium mt-[16px]">Porto, Portugal</h2>
-        <p className="font-light text-sm mt-[8px] text-justify  leading-6 md:leading-8">
-          Hi, I’m <b>Gerson Lamela</b> — a passionate Fullstack JavaScript
-          Developer based in Portugal. I specialize in crafting modern, scalable
-          web applications using technologies like React, Next.js, TypeScript,
-          TailwindCSS, and Node.js. With a degree in Multimedia Engineering and
-          a strong foundation in both design and development, I bridge the gap
-          between clean, intuitive user interfaces and robust backend logic.
-          I’ve led and contributed to diverse projects — from SaaS platforms to
-          e-commerce systems — always focusing on performance, usability, and
-          maintainability. I’m currently open to freelance opportunities where I
-          can help startups, agencies, or businesses turn ideas into impactful
-          digital products. Whether it’s building a full-featured web app or
-          refining the frontend, I’m ready to bring value. Let’s build something
-          great together.
-        </p>
+        <ProfileSummary />
         <div className="flex flex-row items-center gap-[24px] mt-[32px] md:mt-[30px] ">
           <div className="flex rounded-[4px]  bg-gradient-to-r from-[#D24074] to-[#6518B4] hover:scale-120 transition-all p-[2px] shadow-lg w-max mt-4">
             <a

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import RotatingText from "./rotationg-text";
 
 export default function HelloIm() {
   return (
@@ -8,9 +9,29 @@ export default function HelloIm() {
       <h2 className="text-blue text-[32px] md:text-[64px] font-semibold">
         Gerson lamela
       </h2>
-      <h3 className="text-xl md:text-2xl font-semibold  mt-[8px]">
-        Full-Stack Engineer
-      </h3>
+      <div className="flex flex-row items-center gap-[.4em] font-semibold text-xl md:text-2xl  mt-[8px]">
+        <h3 className="font-bold">Full-Stack Engineer</h3>
+        <RotatingText
+          texts={[
+            "Passionate",
+            "Dedicated",
+            "Creative",
+            "Reliable",
+            "Problem-solver",
+            "Team-player",
+            "Innovative",
+          ]}
+          mainClassName="px-2 sm:px-2 md:px-3 bg-black dark:bg-cyan-300 text-white dark:text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+          staggerFrom={"last"}
+          initial={{ y: "100%" }}
+          animate={{ y: 0 }}
+          exit={{ y: "-120%" }}
+          staggerDuration={0.025}
+          splitLevelClassName="overflow-hidden"
+          transition={{ type: "spring", damping: 30, stiffness: 400 }}
+          rotationInterval={2000}
+        />
+      </div>
 
       <div className="flex flex-row items-center gap-[24px] mt-[40px] mb-[10px] md:mt-[60px]">
         <a

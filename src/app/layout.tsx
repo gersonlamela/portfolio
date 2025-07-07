@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
+import SplashCursor from "@/components/splash-cursor";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -33,6 +34,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div className="z-50">
+            <SplashCursor />
+          </div>
           <div className="flex flex-col">
             <Navbar />
             <main className="flex flex-1 items-center">{children}</main>
