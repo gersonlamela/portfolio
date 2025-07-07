@@ -9,7 +9,7 @@ export default function HelloIm() {
       <h2 className="text-blue text-[32px] md:text-[64px] font-semibold">
         Gerson lamela
       </h2>
-      <div className="flex flex-row items-center gap-[.4em] font-semibold text-xl md:text-2xl  mt-[8px]">
+      <div className="flex flex-row flex-wrap items-center gap-[.4em] font-semibold text-lg md:text-2xl  mt-[8px]">
         <h3 className="font-bold">Full-Stack Engineer</h3>
         <RotatingText
           texts={[
@@ -17,7 +17,6 @@ export default function HelloIm() {
             "Dedicated",
             "Creative",
             "Reliable",
-            "Problem-solver",
             "Team-player",
             "Innovative",
           ]}

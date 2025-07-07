@@ -83,7 +83,7 @@ export default function Navbar() {
       </div>
 
       <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-blue font-medium cursor-pointer">
-        Portfólio
+        Gerson Lamela
       </h1>
 
       <nav className="hidden md:flex gap-6" aria-label="Primary Navigation">
@@ -94,7 +94,7 @@ export default function Navbar() {
             className={`px-4 py-2 rounded-md font-semibold transition-colors hover:bg-blue hover:text-black dark:hover:text-white duration-300 focus:outline-none
               ${
                 activeHash === href
-                  ? "bg-black text-white dark:text-black dark:bg-white"
+                  ? "bg-black text-white dark:text-black dark:bg-white dark:hover:text-black"
                   : "text-black bg-transparent dark:text-white"
               }
             `}
