@@ -9,6 +9,7 @@ import {
 import { Button } from "./ui/button";
 import { type JSX, useEffect, useState } from "react";
 import Image from "next/image";
+import { Earth, Github, Monitor } from "lucide-react";
 
 interface Project {
   id: number;
@@ -76,16 +77,10 @@ export default function Projects() {
               <div className="flex gap-4 mt-4 flex-wrap">
                 <div className="rounded-[4px] bg-gradient-to-r from-[#9358F7] to-[#10D7E2] hover:scale-120 transition-all p-[2px] shadow-lg">
                   <Button
-                    className="flex items-center gap-[14px] font-bold text-black dark:text-white bg-background px-6 py-2 rounded-[4px]"
+                    className="flex items-center hover:bg-transparent  gap-[14px] font-bold hover:text-white text-black dark:text-white bg-background px-6 py-2 rounded-[4px]"
                     onClick={() => window.open(project.repoLink, "_blank")}
                   >
-                    <Image
-                      src="/github.svg"
-                      alt="Repo"
-                      width={20}
-                      height={20}
-                      className="invert dark:invert-0"
-                    />
+                    <Github className=" w-32 h-32" />
                     GitHub
                   </Button>
                 </div>
@@ -93,16 +88,10 @@ export default function Projects() {
                 {project.liveLink && (
                   <div className="rounded-[4px] bg-gradient-to-r from-[#9358F7] to-[#10D7E2] hover:scale-120 transition-all p-[2px] shadow-lg">
                     <Button
-                      className="flex items-center gap-[14px] font-bold text-black dark:text-white bg-background px-6 py-2 rounded-[4px]"
+                      className="flex items-center hover:bg-transparent gap-[14px] font-bold text-black hover:text-white dark:text-white bg-background px-6 py-2 rounded-[4px]"
                       onClick={() => window.open(project.liveLink, "_blank")}
                     >
-                      <Image
-                        src="/link.svg"
-                        alt="Live"
-                        width={20}
-                        height={20}
-                        className="invert dark:invert-0"
-                      />
+                      <Monitor className=" w-32 h-32" />
                       Live
                     </Button>
                   </div>
