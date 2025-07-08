@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col w-full">
       <section
         id="home"
-        className="relative w-full min-h-[100vh] flex px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px] pt-16 pb-8 md:pt-20"
+        className="relative w-full min-h-[100vh] flex px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
       >
         <HelloIm />
         <Image
@@ -35,7 +35,7 @@ export default function Home() {
       <ScrollRevealSection origin="right">
         <section
           id="experience"
-          className="scroll-mt-52 flex w-full items-center justify-center py-12 px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
+          className="scroll-mt-52 flex w-full items-center justify-center pt-12 md:pb-12 px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
         >
           <Experience />
         </section>

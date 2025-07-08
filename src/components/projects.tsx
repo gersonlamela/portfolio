@@ -10,15 +10,16 @@ import { Button } from "./ui/button";
 import { type JSX, useEffect, useState } from "react";
 import Image from "next/image";
 import { Earth, Github, Monitor } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface Project {
   id: number;
-  title: string;
+  titleKey: string; // chave da tradução ex: "projects.systemPOS.title"
   image: string;
   technologies: string[];
   repoLink: string;
   liveLink?: string;
-  description: string;
+  descriptionKey: string; // chave da tradução ex: "projects.systemPOS.description"
 }
 
 const techIcons: Record<string, JSX.Element> = {
@@ -29,19 +30,21 @@ const techIcons: Record<string, JSX.Element> = {
 };
 
 export default function Projects() {
+  const t = useTranslations("projects");
+
   const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
-    fetch("data/projects.json")
+    fetch("/data/projects.json")
       .then((res) => res.json())
-      .then((data) => setProjects(data))
+      .then((data: Project[]) => setProjects(data))
       .catch((err) => console.error("Error loading projects:", err));
   }, []);
 
   return (
-    <div className="flex flex-col gap-[24px] w-full py-[40px]">
+    <div className="flex flex-col w-full pb-[40px]">
       <h1 className="text-2xl font-semibold uppercase md:mb-[60px]">
-        Projects
+        {t("title", { default: "Projects" })}
       </h1>
       <div className="md:grid md:grid-cols-2 gap-[20px] space-y-[80px]">
         {projects.map((project) => (
@@ -49,7 +52,7 @@ export default function Projects() {
             <div className="relative w-full h-[312px] md:w-auto border-l-4 border-dark dark:border-blue flex items-center justify-center bg-dark-200 dark:bg-dark">
               <Image
                 src={`/project/${project.image}`}
-                alt={project.title}
+                alt={t(project.titleKey)}
                 fill
                 className="object-contain md:object-cover min-h-[312px] w-full md:w-auto"
               />
@@ -57,16 +60,16 @@ export default function Projects() {
 
             <div className="flex flex-col">
               <h1 className="text-base font-medium mb-[16px]">
-                {project.title}
+                {t(project.titleKey)}
               </h1>
               <p className="text-sm font-light text-justify mb-[10px] h-[60px]">
-                {project.description}
+                {t(project.descriptionKey)}
               </p>
 
               {project.technologies.length > 0 && (
                 <>
                   <h2 className="text-base font-medium text-blue mb-[10px]">
-                    Technologies
+                    {t("technologies", { default: "Technologies" })}
                   </h2>
                   <div className="flex gap-2 mb-[20px]">
                     {project.technologies.map((tech) => (
@@ -79,10 +82,10 @@ export default function Projects() {
               <div className="flex gap-4 mt-4 flex-wrap">
                 <div className="rounded-[4px] bg-gradient-to-r from-[#9358F7] to-[#10D7E2] hover:scale-120 transition-all p-[2px] shadow-lg">
                   <Button
-                    className="flex items-center hover:bg-transparent  gap-[14px] font-bold hover:text-white text-black dark:text-white bg-background px-6 py-2 rounded-[4px]"
+                    className="flex items-center hover:bg-transparent gap-[14px] font-bold hover:text-white text-black dark:text-white bg-background px-6 py-2 rounded-[4px]"
                     onClick={() => window.open(project.repoLink, "_blank")}
                   >
-                    <Github className=" w-32 h-32" />
+                    <Github className="w-32 h-32" />
                     GitHub
                   </Button>
                 </div>
@@ -93,8 +96,8 @@ export default function Projects() {
                       className="flex items-center hover:bg-transparent gap-[14px] font-bold text-black hover:text-white dark:text-white bg-background px-6 py-2 rounded-[4px]"
                       onClick={() => window.open(project.liveLink, "_blank")}
                     >
-                      <Monitor className=" w-32 h-32" />
-                      Live
+                      <Monitor className="w-32 h-32" />
+                      {t("live", { default: "Live" })}
                     </Button>
                   </div>
                 )}

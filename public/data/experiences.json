@@ -1,46 +1,46 @@
 [
   {
     "id": 1,
-    "category": "Education",
-    "title": "Multimedia Technician",
+    "category": "education",
+    "title": "ipt.title",
     "dates": "2018-09-12 – 2021-07-22",
-    "organization": "IPTA – Instituto Profissional de Tecnologias Avançadas",
+    "organization": "ipt.organization",
     "description": [
-      "Design and development of interactive multimedia products",
-      "Capture, digitization, and processing of images, audio, and text",
-      "Content editing to create effective communication solutions",
-      "Integration of multimedia elements using authoring tools",
-      "Programming of multimedia applications",
-      "Web and mobile development"
+      "ipt.desc.1",
+      "ipt.desc.2",
+      "ipt.desc.3",
+      "ipt.desc.4",
+      "ipt.desc.5",
+      "ipt.desc.6"
     ]
   },
   {
     "id": 2,
-    "category": "Internship",
-    "title": "Full-Stack Developer",
+    "category": "internship",
+    "title": "multiDi.title",
     "dates": "2021-04-06 – 2021-07-22",
-    "organization": "MULTI-DI – Conquistagadget, Lda.",
+    "organization": "multiDi.organization",
     "description": [
-      "Management and maintenance of company websites",
-      "Optimization of website code for performance and scalability",
-      "Development of a complete e-commerce website",
-      "Support in creating new digital content",
-      "Database monitoring and control",
-      "Technical support for digital and IT-related issues"
+      "multiDi.desc.1",
+      "multiDi.desc.2",
+      "multiDi.desc.3",
+      "multiDi.desc.4",
+      "multiDi.desc.5",
+      "multiDi.desc.6"
     ]
   },
   {
     "id": 3,
-    "category": "University",
-    "title": "Multimedia Engineering",
+    "category": "university",
+    "title": "istec.title",
     "dates": "2021-10-04 – 2024-09-01",
-    "organization": "ISTEC – Instituto Superior de Tecnologias Avançadas – Porto",
+    "organization": "istec.organization",
     "description": [
-      "Development of advanced multimedia systems",
-      "Production of interactive e-learning content",
-      "Programming of web applications",
-      "Design and implementation of web systems, including e-commerce platforms and Learning Management Systems (LMS)",
-      "Development of 2D and 3D graphic animation applications"
+      "istec.desc.1",
+      "istec.desc.2",
+      "istec.desc.3",
+      "istec.desc.4",
+      "istec.desc.5"
     ]
   }
 ]

@@ -1,47 +1,44 @@
 [
   {
     "id": 1,
-    "title": "System POS",
+    "titleKey": "systemPOS.title",
+    "descriptionKey": "systemPOS.description",
     "image": "project10.png",
     "technologies": ["ts", "react", "js", "css"],
     "repoLink": "https://github.com/gersonlamela/System-POS-Restaurant",
-    "liveLink": "https://system-pos-restaurant.vercel.app",
-    "description": "This project was developed as part of my final undergraduate Multimedia Engineering thesis, where I achieved a final grade of 19/20."
+    "liveLink": "https://system-pos-restaurant.vercel.app"
   },
   {
     "id": 2,
-    "title": "Dev Finances",
+    "titleKey": "devFinances.title",
+    "descriptionKey": "devFinances.description",
     "image": "project02.png",
     "technologies": ["ts", "react", "js", "css"],
     "repoLink": "https://github.com/gersonlamela/dtmoney",
-    "liveLink": "https://dtmoney-lac.vercel.app/",
-    "description": "Dev Finances is a financial control application using modern technologies and open source libraries."
+    "liveLink": "https://dtmoney-lac.vercel.app/"
   },
   {
     "id": 3,
-    "title": "Podcastr",
+    "titleKey": "podcastr.title",
+    "descriptionKey": "podcastr.description",
     "image": "project03.png",
     "technologies": ["ts", "js", "css"],
-    "repoLink": "https://github.com/gersonlamela/podcastr",
-    "liveLink": "",
-    "description": "Podcastr is a platform built for podcast broadcasting."
+    "repoLink": "https://github.com/gersonlamela/podcastr"
   },
   {
     "id": 4,
-    "title": "GitHub Explorer",
+    "titleKey": "githubExplorer.title",
+    "descriptionKey": "githubExplorer.description",
     "image": "project04.png",
     "technologies": ["ts", "react", "js", "css"],
-    "repoLink": "https://github.com/gersonlamela/01-github-explorer",
-    "liveLink": "",
-    "description": "Project developed during Rocketseat's Ignite (ReactJS - Chapter I)."
+    "repoLink": "https://github.com/gersonlamela/01-github-explorer"
   },
   {
     "id": 5,
-    "title": "Login System",
+    "titleKey": "loginSystem.title",
+    "descriptionKey": "loginSystem.description",
     "image": "project05.png",
     "technologies": ["react", "js", "css"],
-    "repoLink": "https://github.com/gersonlamela/Login",
-    "liveLink": "",
-    "description": "Login system with JWT authentication token."
+    "repoLink": "https://github.com/gersonlamela/Login"
   }
 ]

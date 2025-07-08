@@ -1,0 +1,101 @@
+{
+  "navbar": {
+    "home": "Home",
+    "aboutme": "About me",
+    "experience": "Experience",
+    "projects": "Projects"
+  },
+  "hello": {
+    "hi": "Hi, I’m",
+    "name": "Gerson Lamela",
+    "role": "Full-Stack Engineer",
+    "qualities": [
+      "Passionate",
+      "Dedicated",
+      "Creative",
+      "Reliable",
+      "Team-player",
+      "Innovative"
+    ]
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "location": "Porto, Portugal",
+    "photoAlt": "User photo",
+    "curriculum": "Curriculum",
+    "curriculumAlt": "Download curriculum",
+    "email": "E-mail",
+    "emailAlt": "Send email",
+    "aboutme": "Hello, I’m Gerson Lamela, a {age} Fullstack Developer with expertise in building fast, scalable, and user-centric web applications. I work extensively with React, Next.js, TypeScript, TailwindCSS, and Node.js. I am passionate about solving complex problems, adopting new technologies, and delivering innovative solutions. Outside of work, I dedicate time to personal projects and continuous learning to further enhance my skills."
+  },
+  "experience": {
+    "title": "Experience",
+    "loading": "Loading experiences...",
+    "categories": {
+      "education": "Education",
+      "internship": "Internship",
+      "university": "University"
+    },
+    "ipt": {
+      "title": "Multimedia Technician",
+      "organization": "IPTA – Instituto Profissional de Tecnologias Avançadas",
+      "desc": {
+        "1": "Design and development of interactive multimedia products",
+        "2": "Capture, digitization, and processing of images, audio, and text",
+        "3": "Content editing to create effective communication solutions",
+        "4": "Integration of multimedia elements using authoring tools",
+        "5": "Programming of multimedia applications",
+        "6": "Web and mobile development"
+      }
+    },
+    "multiDi": {
+      "title": "Full-Stack Developer",
+      "organization": "MULTI-DI – Conquistagadget, Lda.",
+      "desc": {
+        "1": "Management and maintenance of company websites",
+        "2": "Optimization of website code for performance and scalability",
+        "3": "Development of a complete e-commerce website",
+        "4": "Support in creating new digital content",
+        "5": "Database monitoring and control",
+        "6": "Technical support for digital and IT-related issues"
+      }
+    },
+    "istec": {
+      "title": "Multimedia Engineering",
+      "organization": "ISTEC – Instituto Superior de Tecnologias Avançadas – Porto",
+      "desc": {
+        "1": "Development of advanced multimedia systems",
+        "2": "Production of interactive e-learning content",
+        "3": "Programming of web applications",
+        "4": "Design and implementation of web systems, including e-commerce platforms and Learning Management Systems (LMS)",
+        "5": "Development of 2D and 3D graphic animation applications"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "technologies": "Technologies",
+    "live": "Live",
+
+    "systemPOS": {
+      "title": "System POS",
+      "description": "This project was developed as part of my final undergraduate Multimedia Engineering thesis, where I achieved a final grade of 19/20."
+    },
+    "devFinances": {
+      "title": "Dev Finances",
+      "description": "Dev Finances is a financial control application using modern technologies and open source libraries."
+    },
+    "podcastr": {
+      "title": "Podcastr",
+      "description": "Podcastr is a platform built for podcast broadcasting."
+    },
+    "githubExplorer": {
+      "title": "GitHub Explorer",
+      "description": "Project developed during Rocketseat's Ignite (ReactJS - Chapter I)."
+    },
+    "loginSystem": {
+      "title": "Login System",
+      "description": "Login system with JWT authentication token."
+    }
+  }
+}

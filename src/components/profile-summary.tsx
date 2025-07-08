@@ -1,8 +1,12 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import DecryptedText from "./decrypted-text";
+import { useTranslations } from "next-intl";
 
 export default function ProfileSummary() {
+  const t = useTranslations("aboutMe");
+
   const [age, setAge] = useState<number | null>(null);
 
   useEffect(() => {
@@ -22,12 +26,13 @@ export default function ProfileSummary() {
     setAge(calculatedAge);
   }, []);
 
+  // Montar o texto com a idade (fallback para "loading..." caso seja null)
+  const text = t("aboutme", { age: age !== null ? age : "loading..." });
+
   return (
     <p className="font-light text-sm mt-2 text-justify leading-6 md:leading-8 whitespace-pre-line">
       <DecryptedText
-        text={`Hello, I’m Gerson Lamela, a ${
-          age !== null ? age : "loading..."
-        } Fullstack Developer with expertise in building fast, scalable, and user-centric web applications. I work extensively with React, Next.js, TypeScript, TailwindCSS, and Node.js. I am passionate about solving complex problems, adopting new technologies, and delivering innovative solutions. Outside of work, I dedicate time to personal projects and continuous learning to further enhance my skills.`}
+        text={text}
         speed={100}
         animateOn="view"
         maxIterations={20}

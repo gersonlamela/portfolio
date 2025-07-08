@@ -30,7 +30,7 @@ const ScrollRevealSection = ({
           opacity: 0,
           easing: "ease-in-out",
           reset: false,
-          mobile: true,
+          mobile: false,
           cleanup: true,
           scale: 1,
           viewFactor: 0.2,

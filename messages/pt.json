@@ -1,0 +1,101 @@
+{
+  "navbar": {
+    "home": "Início",
+    "aboutme": "Sobre mim",
+    "experience": "Experiência",
+    "projects": "Projetos"
+  },
+  "hello": {
+    "hi": "Olá, eu sou o",
+    "name": "Gerson Lamela",
+    "role": "Engenheiro Full-Stack",
+    "qualities": [
+      "Apaixonado",
+      "Dedicado",
+      "Criativo",
+      "Fiável",
+      "Trabalho em equipa",
+      "Inovador"
+    ]
+  },
+  "aboutMe": {
+    "title": "Sobre mim",
+    "location": "Porto, Portugal",
+    "photoAlt": "Foto do utilizador",
+    "curriculum": "Currículo",
+    "curriculumAlt": "Descarregar currículo",
+    "email": "E-mail",
+    "emailAlt": "Enviar email",
+    "aboutme": "Olá, sou o Gerson Lamela, um desenvolvedor Fullstack de {age} anos com experiência na construção de aplicações web rápidas, escaláveis e centradas no utilizador. Trabalho extensivamente com React, Next.js, TypeScript, TailwindCSS e Node.js. Sou apaixonado por resolver problemas complexos, adotar novas tecnologias e entregar soluções inovadoras. Fora do trabalho, dedico tempo a projetos pessoais e ao aprendizado contínuo para aprimorar ainda mais as minhas competências."
+  },
+  "experience": {
+    "title": "Experiências",
+    "loading": "A carregar experiências...",
+    "categories": {
+      "education": "Educação",
+      "internship": "Estágio",
+      "university": "Universidade"
+    },
+    "ipt": {
+      "title": "Técnico de Multimédia",
+      "organization": "IPTA – Instituto Profissional de Tecnologias Avançadas",
+      "desc": {
+        "1": "Conceção e desenvolvimento de produtos multimédia interativos",
+        "2": "Captura, digitalização e tratamento de imagens, áudio e texto",
+        "3": "Edição de conteúdos para criar soluções eficazes de comunicação",
+        "4": "Integração de elementos multimédia com ferramentas de autor",
+        "5": "Programação de aplicações multimédia",
+        "6": "Desenvolvimento web e mobile"
+      }
+    },
+    "multiDi": {
+      "title": "Programador Full-Stack",
+      "organization": "MULTI-DI – Conquistagadget, Lda.",
+      "desc": {
+        "1": "Gestão e manutenção dos sites da empresa",
+        "2": "Otimização do código dos sites para performance e escalabilidade",
+        "3": "Desenvolvimento de um site de e-commerce completo",
+        "4": "Apoio na criação de novo conteúdo digital",
+        "5": "Monitorização e controlo da base de dados",
+        "6": "Suporte técnico em questões digitais e informáticas"
+      }
+    },
+    "istec": {
+      "title": "Engenharia Multimédia",
+      "organization": "ISTEC – Instituto Superior de Tecnologias Avançadas – Porto",
+      "desc": {
+        "1": "Desenvolvimento de sistemas multimédia avançados",
+        "2": "Produção de conteúdos interativos para e-learning",
+        "3": "Programação de aplicações web",
+        "4": "Design e implementação de sistemas web, incluindo plataformas de e-commerce e LMS",
+        "5": "Desenvolvimento de aplicações de animação gráfica 2D e 3D"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "technologies": "Tecnologias",
+    "live": "Online",
+
+    "systemPOS": {
+      "title": "System POS",
+      "description": "Este projeto foi desenvolvido como parte da minha tese final de licenciatura em Engenharia Multimédia, onde obtive a nota final de 19/20."
+    },
+    "devFinances": {
+      "title": "Dev Finances",
+      "description": "Dev Finances é uma aplicação de controlo financeiro que utiliza tecnologias modernas e bibliotecas open source."
+    },
+    "podcastr": {
+      "title": "Podcastr",
+      "description": "Podcastr é uma plataforma construída para transmissão de podcasts."
+    },
+    "githubExplorer": {
+      "title": "GitHub Explorer",
+      "description": "Projeto desenvolvido durante o Ignite da Rocketseat (ReactJS - Capítulo I)."
+    },
+    "loginSystem": {
+      "title": "Sistema de Login",
+      "description": "Sistema de login com token de autenticação JWT."
+    }
+  }
+}
