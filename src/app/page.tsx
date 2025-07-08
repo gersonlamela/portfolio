@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col w-full">
       <section
         id="home"
-        className="w-full md:h-screen flex overflow-hidden px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
+        className="relative w-full min-h-[100vh] flex px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px] pt-16 pb-8 md:pt-20"
       >
         <HelloIm />
         <Image
@@ -22,10 +22,11 @@ export default function Home() {
           className="hidden md:block absolute right-0 top-20 transition-transform duration-300 ease-in-out hover:scale-125 will-change-transform pointer-events-none select-none"
         />
       </section>
+
       <ScrollRevealSection origin="left">
         <section
           id="aboutme"
-          className="flex w-full items-center justify-center min-h-screen mt-[55px] md:mt-0 py-[40px] px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
+          className="scroll-mt-52 flex w-full items-center justify-center py-12 px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
         >
           <AboutMe />
         </section>
@@ -34,7 +35,7 @@ export default function Home() {
       <ScrollRevealSection origin="right">
         <section
           id="experience"
-          className="flex w-full  items-center justify-center h-auto md:h-screen mt-[40px] mb-[40px] md:mt-0 px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
+          className="scroll-mt-52 flex w-full items-center justify-center py-12 px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
         >
           <Experience />
         </section>
@@ -43,15 +44,14 @@ export default function Home() {
       <ScrollRevealSection origin="bottom">
         <section
           id="projects"
-          className="flex w-full  items-center justify-center h-auto  mt-[40px] md:mt-0 px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
+          className="scroll-mt-10  flex w-full items-center justify-center py-12 px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]"
         >
           <Projects />
         </section>
       </ScrollRevealSection>
 
-      <footer className="w-full flex items-center justify-center py-[15px] px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]">
-        <div> @ {new Date().getFullYear()} - Gerson Lamela</div>
-        <div></div>
+      <footer className="w-full flex items-center justify-center py-6 px-[24px] md:px-[50px] lg:px-[100px] xl:px-[180px]">
+        <div>@ {new Date().getFullYear()} - Gerson Lamela</div>
       </footer>
     </div>
   );

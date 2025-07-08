@@ -4,7 +4,7 @@ import RotatingText from "./rotationg-text";
 
 export default function HelloIm() {
   return (
-    <div className="flex flex-col justify-center mt-[100px]  z-20">
+    <div className="flex flex-col justify-center mt-[100px] z-20">
       <h1 className="text-xl md:text-2xl font-semibold">Hi, I’m</h1>
       <h2 className="text-blue text-[32px] md:text-[64px] font-semibold">
         Gerson lamela

@@ -40,7 +40,9 @@ export default function Projects() {
 
   return (
     <div className="flex flex-col gap-[24px] w-full py-[40px]">
-      <h1 className="text-2xl font-semibold uppercase">Projects</h1>
+      <h1 className="text-2xl font-semibold uppercase md:mb-[60px]">
+        Projects
+      </h1>
       <div className="md:grid md:grid-cols-2 gap-[20px] space-y-[80px]">
         {projects.map((project) => (
           <div key={project.id} className="flex flex-col gap-[16px]">

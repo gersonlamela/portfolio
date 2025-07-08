@@ -107,7 +107,7 @@ export default function Navbar() {
 
       <ModeToggle />
 
-      <div className="hidden md:inline-block md:absolute left-0 right-0 bottom-0 flex-1 h-[2px] bg-dark-200 md:mx-[50px] lg:mx-[100px]"></div>
+      <div className="hidden md:inline-block md:absolute left-0 right-0 bottom-0 flex-1 h-[2px] bg-dark-200 md:mx-[50px] lg:mx-[100px] xl:mx-[180px]"></div>
     </header>
   );
 }
