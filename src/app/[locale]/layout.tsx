@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
-import SplashCursor from "@/components/splash-cursor";
+
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "../../i18n/routing";
@@ -16,8 +16,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Hi, I'm Gerson – Fullstack Developer",
-  description: "HI create fast, clean and modern websites and apps.",
+  title: "Hi, I'm Gerson – Software Engineer",
+  description:
+    "Solution and results-driven Developer, focused on creating effective technical solutions with clean code, solid architecture, and exceptional user experiences.",
+  icons: {
+    icon: "/favicon.ico", // caminho para o teu favicon
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico", // opcional, para dispositivos Apple
+  },
 };
 
 export default async function RootLayout({
@@ -47,9 +53,6 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="z-50">
-              <SplashCursor />
-            </div>
             <div className="flex flex-col">
               <Navbar />
               <main className="flex flex-1 items-center">{children}</main>
